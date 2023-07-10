@@ -9,9 +9,9 @@ const searchLink = document.querySelector('a');
 
 botonlupa.onclick = e => {
     console.log('click');
-    let buscador = document.querySelector('#txtbuscar')
-    let valortxt = buscador.value;
-    if(valortxt != ""){
+    let buscador = document.querySelector('#txtbuscar');//obj input
+    let valortxt = buscador.value;//objinput su valor(benjamin)
+    if(valortxt != ""){//valortxt = benjamin
         let barra = `https://www.google.com/search?q=${valortxt}&oq=${valortxt}`;
         window.open(barra,"","" );
     }
@@ -121,7 +121,7 @@ function coordenada() {
     let divSugerencia = document.querySelector(".sugerencias");
     divSugerencia.style.left = `${coordenadaTxt.x}px`;
     divSugerencia.style.top = `${coordenadaTxt.y + coordenadaTxt.height}px`;
-    divSugerencia.style.width = `${coordenadaTxt.width}px`;
+    divSugerencia.style.width = `${coordenadaTxt.width}px`;//interpolacion de variables
 
 }
 let suggestions = [
